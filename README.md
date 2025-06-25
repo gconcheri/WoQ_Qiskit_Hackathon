@@ -1,6 +1,6 @@
 # Qiskit Hackaton - LamaLab project
 
-![lama_logo](https://github.com/giorgiostucchi/QiskitMunich/blob/main/logo.pdf)
+(Make sure you check out our [LamaLab logo](https://github.com/giorgiostucchi/QiskitMunich/blob/main/logo.pdf)!)
 
 This project realizes a three-staged enhancement of qiskit standard transpilation of quantum circuits. The stages act, respectively, at the pre-transpilation, transpilation, and post-transpilation level.
 
@@ -10,13 +10,16 @@ This project realizes a three-staged enhancement of qiskit standard transpilatio
 
 ```
 .
-├── assembled.ipynb   # ← the star of the show
-├── LICENSE             # license inherited from the original author
+├── final_notebook.ipynb     # ← the star of the show!
 ├── README.md           # you’re reading it
 ├── my_ddd.py           # libraries
 ├── my_lib.py
 ├── my_rem.py
-├── logo.pdf            # advertise us!
+├── templates.py
+├── lamalablogo.pdf     # advertise us!! 
+├── images
+├── LICENSE      
+├── __pycache__
 └── zxpass              # functions from https://github.com/dlyongemallo/qiskit-zx-transpiler
 ```
 
@@ -24,10 +27,8 @@ This project realizes a three-staged enhancement of qiskit standard transpilatio
 
 ## Local setup
 
-```bash
-git clone https://github.com/giorgiostucchi/QiskitMunich/tree/main
+Clone from https://github.com/giorgiostucchi/QiskitMunich/tree/main
 
-```
 
 ---
 
