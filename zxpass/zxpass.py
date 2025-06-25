@@ -135,8 +135,7 @@ class ZXPass(TransformationPass):
             #       optimizing the rest of the circuit, and then reinserting the unsupported operations, but this is
             #       very tricky as the unsupported operations may have side effects on the rest of the circuit.
             #       See https://github.com/dlyongemallo/qiskit-zx-transpiler/issues/18.
-            if gate.name not in qiskit_gate_table or gate.condition is not None:
-                # Encountered an operation not supported by PyZX, so just store the DAGOpNode.
+            if gate.name not in qiskit_gate_table or getattr(gate, "condition", None) is not None:                # Encountered an operation not supported by PyZX, so just store the DAGOpNode.
                 # Flush the current PyZX Circuit first if there is one.
                 if current_circuit is not None:
                     circuits_and_nodes.append(current_circuit)
@@ -184,10 +183,11 @@ class ZXPass(TransformationPass):
         """
 
         dag = DAGCircuit()
-        dag.cregs = original_dag.cregs
+        for qreg in original_dag.qregs.values():
+            dag.add_qreg(qreg)
+        for creg in original_dag.cregs.values():
+            dag.add_creg(creg)
         dag.add_clbits(original_dag.clbits)
-        dag.qregs = original_dag.qregs
-        dag.add_qubits(original_dag.qubits)
         for circuit_or_node in circuits_and_nodes:
             if isinstance(circuit_or_node, DAGOpNode):
                 dag.apply_operation_back(
