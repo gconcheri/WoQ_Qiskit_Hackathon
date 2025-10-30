@@ -255,6 +255,8 @@ def plot_circuitdepth(namefakeprovider, qc, title):
    plt.subplot(1, 2, 2)
    plt.bar([str(lvl) for lvl in optimization_levels], depths, color='salmon')
    plt.title('Circuit Depth')
+   plt.xlabel('Optimization Level')
+   plt.ylabel('Depth')
 
 
 def create_operatorstring(qubit_num):

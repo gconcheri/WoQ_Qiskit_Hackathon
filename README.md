@@ -1,10 +1,11 @@
 # Qiskit Hackaton - LamaLab project
 
-(Make sure you check out our [LamaLab logo](https://github.com/giorgiostucchi/QiskitMunich/blob/main/lamalablogo.pdf)!)
+![Lamalab logo](images/lamalablogo.pdf)
 
 This project realizes a three-staged enhancement of qiskit standard transpilation of quantum circuits. The stages act, respectively, at the pre-transpilation, transpilation, and post-transpilation level.
 
----
+The team members who contributed to this project are: Damiano Aliverti-Piuri, Giacomo Amadore, Giovanni Concheri, Stefano Romboni, Giorgio Stucchi
+
 
 ## What’s inside?
 
@@ -16,9 +17,10 @@ This project realizes a three-staged enhancement of qiskit standard transpilatio
 ├── my_lib.py
 ├── my_rem.py
 ├── templates.py
-├── lamalablogo.pdf     # advertise us!! 
+├── templates_matching_Gio # my personal contribution to chapter 1
+├── guidelines # hackathon and qiskit guidelines
 ├── images
-├── LICENSE      
+├── LICENSE
 ├── __pycache__
 └── zxpass              # functions from https://github.com/dlyongemallo/qiskit-zx-transpiler
 ```
