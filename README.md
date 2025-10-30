@@ -1,6 +1,6 @@
 # Qiskit Hackaton - LamaLab project
 
-![Lamalab logo](images/lamalablogo.jpg)
+<img src="images/lamalablogo.jpg" alt="Lamalab logo" width="200" />
 
 This project realizes a three-staged enhancement of qiskit standard transpilation of quantum circuits. The stages act, respectively, at the pre-transpilation, transpilation, and post-transpilation level.
 
