@@ -1,4 +1,5 @@
-# Qiskit Hackaton - LamaLab project
+# World of Quantum Qiskit Hackaton, Munich, June 24-25 2025
+## LamaLab project
 
 <img src="images/lamalablogo.jpg" alt="Lamalab logo" width="200" />
 
@@ -45,3 +46,4 @@ Big thanks to the QISKIT hackaton organizers!
 We adapted and took some code from [dlyongemallo](https://github.com/dlyongemallo/qiskit-zx-transpiler) and [ZX Calculus Projects](https://github.com/Quantomatic/pyzx/blob/master/circuits/Fast/mod5_4_before), which should be mentioned when referncing the current repository.
 
 ---
+
